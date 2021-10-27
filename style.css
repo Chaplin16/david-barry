@@ -6,6 +6,27 @@
     transform: scale(1);
   }
 }
+@keyframes run-left {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes run-right {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -29,6 +50,16 @@ html {
   font-size: 1.8rem;
   font-family: "Permanent Marker", cursive;
   letter-spacing: 0.2rem;
+}
+
+.run-left {
+  animation: run-left 1700ms ease;
+  animation-delay: 1700ms;
+}
+
+.run-right {
+  animation: run-right 1700ms ease;
+  animation-delay: 1700ms;
 }
 
 @media all and (max-width: 500px) {
