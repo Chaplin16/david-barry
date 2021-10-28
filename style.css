@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes animate-title {
   0% {
     transform: scale(0);
@@ -6,25 +7,25 @@
     transform: scale(1);
   }
 }
-@keyframes run-left {
+@keyframes run {
   0% {
-    transform: translateX(-200%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
-    display: block;
-    transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes run-right {
+@keyframes scrolling {
   0% {
-    transform: translateX(200%);
-    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
   }
   100% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
   }
 }
 html {
@@ -44,6 +45,22 @@ html {
   color: #d60c0c;
 }
 
+.navbar {
+  z-index: 5;
+}
+.navbar .navbar-toggler {
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 !important;
+}
+.navbar .navbar-toggler span:hover {
+  background-color: #d60c0c !important;
+  color: #fff !important;
+}
+
+h2 {
+  padding-top: 4.5rem !important;
+}
+
 .text {
   animation: animate-title 1700ms ease;
   max-width: 17rem;
@@ -52,19 +69,50 @@ html {
   letter-spacing: 0.2rem;
 }
 
-.run-left {
-  animation: run-left 1700ms ease;
-  animation-delay: 1700ms;
+.new {
+  animation: run 3000ms ease-out;
 }
 
-.run-right {
-  animation: run-right 1700ms ease;
-  animation-delay: 1700ms;
+.old {
+  animation: run 3000ms ease-out;
 }
 
-@media all and (max-width: 500px) {
-  h1 a {
-    font-size: 1rem !important;
+.scrolling_menu {
+  max-width: 80%;
+  margin: 1.5em auto 2em;
+  border: 3px solid #000;
+  overflow: hidden;
+  font-size: 1.3rem;
+  background-color: #fff !important;
+  color: #d60c0c !important;
+  box-shadow: 0 0.15em 0.3em #000, inset 0 0 0.3em 0.1em #fff;
+}
+.scrolling_menu > :first-child {
+  display: inline-block;
+  padding-right: 2em;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: scrolling 45s infinite linear;
+}
+.scrolling_menu .scrolling_title {
+  font-weight: 700;
+}
+.scrolling_menu .bullets {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+@media all and (max-width: 350px) {
+  .navbar h1 a {
+    padding-left: 0 !important;
+  }
+
+  .navbar svg {
+    display: none;
+  }
+
+  .phone {
+    padding-left: 0 !important;
   }
 }
 @media all and (max-width: 400px) {
@@ -75,10 +123,61 @@ html {
   .navbar-toggler {
     padding: 0.2rem;
   }
+
+  .container .carousel {
+    padding-left: 0rem !important;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }
-@media all and (max-width: 350px) {
-  .navbar h1 a {
-    padding-left: 0 !important;
+@media all and (max-width: 480px) {
+  .carousel {
+    padding-left: 1rem !important;
+  }
+}
+@media all and (max-width: 500px) {
+  h1 a {
+    font-size: 1rem !important;
+  }
+}
+@media all and (max-width: 600px) {
+  main img {
+    max-width: 17rem;
+  }
+}
+@media all and (min-width: 600px) {
+  .text {
+    max-width: 35rem;
+  }
+
+  .run {
+    max-width: 32rem;
+  }
+
+  .container .carousel {
+    padding-left: 0rem !important;
+  }
+}
+@media all and (min-width: 750px) {
+  .container .carousel {
+    padding-left: 4.5rem !important;
+  }
+}
+@media all and (min-width: 970px) {
+  .container .carousel {
+    padding-left: 10.5rem !important;
+  }
+}
+@media all and (max-width: 1150px) {
+  .arrow-right {
+    display: none;
+  }
+}
+@media all and (min-width: 1150px) {
+  .arrow-down {
+    display: none;
   }
 }
 
