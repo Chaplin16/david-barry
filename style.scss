@@ -113,6 +113,14 @@ h2{
     font-weight: 400;
 }
 
+//PAGE PHOTOS.HTML
+.before-after{
+    padding:1rem;
+    border-style:dashed double;
+    max-width: 35rem;
+    border-color: $color--main;
+}
+
 
 @media all and (max-width: 350px){
     .navbar h1 a{
