@@ -14,9 +14,9 @@ function carousel(selector, data) {
         autoplaySpeed:1200,
         autoplay: true,
         responsive: [{
-                breakpoint: 1300,
+                breakpoint: 1150,
                 settings: {
-                    arrows: true,
+                    arrows: false,
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 1 

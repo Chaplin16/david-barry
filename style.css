@@ -102,6 +102,11 @@ h2 {
   padding-right: 7px;
 }
 
+.maconnerie,
+.toiture {
+  font-weight: 400;
+}
+
 @media all and (max-width: 350px) {
   .navbar h1 a {
     padding-left: 0 !important;
@@ -169,6 +174,14 @@ h2 {
   .container .carousel {
     padding-left: 10.5rem !important;
   }
+
+  .services {
+    display: flex;
+    justify-content: space-around;
+  }
+  .services .toiture {
+    padding-top: 6rem;
+  }
 }
 @media all and (max-width: 1150px) {
   .arrow-right {
@@ -178,6 +191,40 @@ h2 {
 @media all and (min-width: 1150px) {
   .arrow-down {
     display: none;
+  }
+
+  .index-photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section img, section .photos {
+    max-width: 20rem;
+    margin: 0 !important;
+  }
+  section svg {
+    margin: 1rem;
+  }
+  section .row > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .container .carousel {
+    width: 20rem;
+    max-width: 20rem;
+    padding: 0 !important;
+  }
+
+  .slick-next, .slick-arrow {
+    display: none;
+  }
+}
+@media all and (min-width: 1350px) {
+  .index-photos {
+    max-width: 1350px;
+    margin: auto;
   }
 }
 
