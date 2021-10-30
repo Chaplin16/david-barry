@@ -102,6 +102,15 @@ h2 {
   padding-right: 7px;
 }
 
+.footer {
+  font-size: 0.8rem !important;
+  line-height: 1.15;
+}
+.footer a:hover {
+  color: #000 !important;
+  font-weight: 700;
+}
+
 .maconnerie,
 .toiture {
   font-weight: 400;
@@ -156,14 +165,14 @@ h2 {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
-
-  .footer {
-    flex-direction: column;
-  }
 }
 @media all and (max-width: 500px) {
   h1 a {
     font-size: 1rem !important;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 @media all and (max-width: 600px) {
