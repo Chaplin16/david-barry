@@ -139,14 +139,26 @@ h2 {
   .container .carousel {
     padding-left: 0rem !important;
   }
-
-  .footer {
-    flex-direction: column;
-  }
 }
 @media all and (max-width: 480px) {
   .carousel {
     padding-left: 1rem !important;
+  }
+
+  .before-after {
+    max-width: 90% !important;
+  }
+  .before-after .img {
+    max-width: 9rem !important;
+  }
+
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 @media all and (max-width: 500px) {
@@ -188,6 +200,11 @@ h2 {
   }
   .services .toiture {
     padding-top: 6rem;
+  }
+}
+@media all and (max-width: 992px) {
+  .navbar .nav-link {
+    padding-left: 0.5rem;
   }
 }
 @media all and (max-width: 1150px) {
