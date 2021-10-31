@@ -38,7 +38,7 @@ html{
     min-height: 100%!important;
 }
 
-$color--main: #d60c0c;
+$color--main: #f76300;
 
 .bg--color{
     background-color: $color--main;
@@ -68,7 +68,7 @@ h2{
     animation: animate-title 1700ms ease;
     max-width: 17rem;
     font-size:1.8rem;
-    font-family: 'Permanent Marker', cursive;
+    
     letter-spacing: 0.2rem;;
 }
 
