@@ -38,11 +38,11 @@ html {
 }
 
 .bg--color {
-  background-color: #d60c0c;
+  background-color: #f76300;
 }
 
 .text--color {
-  color: #d60c0c;
+  color: #f76300;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ html {
   outline: 0 !important;
 }
 .navbar .navbar-toggler span:hover {
-  background-color: #d60c0c !important;
+  background-color: #f76300 !important;
   color: #fff !important;
 }
 
@@ -65,7 +65,6 @@ h2 {
   animation: animate-title 1700ms ease;
   max-width: 17rem;
   font-size: 1.8rem;
-  font-family: "Permanent Marker", cursive;
   letter-spacing: 0.2rem;
 }
 
@@ -84,7 +83,7 @@ h2 {
   overflow: hidden;
   font-size: 1.3rem;
   background-color: #fff !important;
-  color: #d60c0c !important;
+  color: #f76300 !important;
   box-shadow: 0 0.15em 0.3em #000, inset 0 0 0.3em 0.1em #fff;
 }
 .scrolling_menu > :first-child {
