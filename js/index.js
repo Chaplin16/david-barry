@@ -54,3 +54,4 @@ function carousel(selector, data) {
   }
   
   carousel(".carousel", extension);
+  carousel(".carousel-second", realisation)

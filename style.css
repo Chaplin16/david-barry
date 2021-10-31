@@ -55,6 +55,7 @@ html {
 .navbar .navbar-toggler span:hover {
   background-color: #f76300 !important;
   color: #fff !important;
+  border-color: #000 !important;
 }
 
 h2 {
@@ -144,12 +145,14 @@ h2 {
     padding: 0.2rem;
   }
 
-  .container .carousel {
+  .container .carousel,
+.contaner .carousel-second {
     padding-left: 0rem !important;
   }
 }
 @media all and (max-width: 480px) {
-  .carousel {
+  .carousel,
+.carousel-second {
     padding-left: 1rem !important;
   }
 
@@ -188,17 +191,19 @@ h2 {
     max-width: 32rem;
   }
 
-  .container .carousel {
+  .container .carousel, .container .carousel-second {
     padding-left: 0rem !important;
   }
 }
 @media all and (min-width: 750px) {
-  .container .carousel {
+  .container .carousel,
+.container .carousel-second {
     padding-left: 4.5rem !important;
   }
 }
 @media all and (min-width: 970px) {
-  .container .carousel {
+  .container .carousel,
+.container .carousel-second {
     padding-left: 10.5rem !important;
   }
 
@@ -243,7 +248,8 @@ h2 {
     padding-right: 0 !important;
   }
 
-  .container .carousel {
+  .container .carousel,
+.container .carousel-second {
     width: 20rem;
     max-width: 20rem;
     padding: 0 !important;
