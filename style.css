@@ -102,6 +102,14 @@ h2 {
   padding-right: 7px;
 }
 
+.left {
+  float: left;
+}
+
+.border--color {
+  border: 2px solid #f76300;
+}
+
 .footer {
   font-size: 0.8rem !important;
   line-height: 1.15;
