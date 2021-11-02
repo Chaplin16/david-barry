@@ -1,32 +1,28 @@
 //ANIMATIONS
 @keyframes animate-title{
-    0% {
-        transform:scale(0)
-    }
-    100%{
-       transform:scale(1)
-    }
+    0% {transform:scale(0)}
+    100%{transform:scale(1)}
+}
+
+@keyframes appear{
+    0%{ opacity:0;}
+    50%{opacity:0;}
+    100%{opacity:1;}
 }
 
 @keyframes run{
-    0%{
-        opacity:0;
-    }
-    50%{
-        opacity:0;
-    }
-    100%{
-        opacity:1;
-    }
+    0% {margin-left:0}
+    50% {margin-left:85%;}
+    90%{transform: scale(-1, 1);}
+    95%{margin-left:5px}
+    96%{transform: scale(-1,1);}
+    97% {margin-left:5px}
+    100% {margin-left:0}
 }
 
 @keyframes scrolling {
-    0% {
-        transform: translate3d(0,0,0);      /* position initiale à droite */
-    }
-    100% {
-        transform: translate3d(-100%,0,0);  /* position finale à gauche */
-    }
+    0% {transform: translate3d(0,0,0);      /* position initiale à droite */}
+    100% {transform: translate3d(-100%,0,0);  /* position finale à gauche */}
 }
 
 html{
@@ -74,14 +70,16 @@ h2{
 }
 
 .new{
-    animation: run 3000ms ease-out;
+    animation: appear 3000ms ease-out;
 }
 
 .old{
-    animation: run 3000ms ease-out ;
+    animation: appear 3000ms ease-out ;
 }
 
-
+.barrow{
+    animation: run 6000ms infinite;
+}
 // menu defilant
 .scrolling_menu{
     max-width: 80%;
@@ -120,7 +118,7 @@ h2{
     font-size: 0.8rem!important;
     line-height: 1.15;
     & a:hover{
-        color: #000!important;
+        color: #fff!important;
         font-weight: 700;
     }
 }
@@ -210,6 +208,9 @@ h2{
        & .carousel-second{
             padding-left: 0rem!important;
         }
+    }
+    .roof{
+        max-width: 18rem!important;
     }
 }
 
