@@ -10,15 +10,7 @@
     100%{opacity:1;}
 }
 
-@keyframes run{
-    0% {margin-left:0}
-    50% {margin-left:85%;}
-    90%{transform: scale(-1, 1);}
-    95%{margin-left:5px}
-    96%{transform: scale(-1,1);}
-    97% {margin-left:5px}
-    100% {margin-left:0}
-}
+
 
 @keyframes scrolling {
     0% {transform: translate3d(0,0,0);      /* position initiale à droite */}
@@ -178,7 +170,6 @@ h2{
         margin-right: 0!important;
         margin-left: 0!important;
     }
-
 }
 
 @media all and (max-width:500px){
@@ -193,6 +184,15 @@ h2{
 @media all and (max-width:600px){
     main img {
         max-width: 17rem
+    }
+    @keyframes run{
+        0% {margin-left: 0}
+        50% {margin-left:70%;}
+        90%{transform: scale(-1, 1);}
+        95%{margin-left:0px}
+        96%{transform: scale(-1,1);}
+        97% {margin-left:0}
+        100% {margin-left:0}
     }
 }
 
@@ -211,6 +211,15 @@ h2{
     }
     .roof{
         max-width: 18rem!important;
+    }
+    @keyframes run{
+        0% {margin-left: 0}
+        50% {margin-left:80%;}
+        90%{transform: scale(-1, 1);}
+        95%{margin-left:0px}
+        96%{transform: scale(-1,1);}
+        97% {margin-left:0}
+        100% {margin-left:0}
     }
 }
 
@@ -232,6 +241,15 @@ h2{
         & .toiture{
             padding-top: 6rem;
         }
+    }
+    @keyframes run{
+        0% {margin-left: 0}
+        50% {margin-left:87%;}
+        90%{transform: scale(-1, 1);}
+        95%{margin-left:0px}
+        96%{transform: scale(-1,1);}
+        97% {margin-left:0}
+        100% {margin-left:0}
     }
 }
 
