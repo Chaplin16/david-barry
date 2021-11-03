@@ -140,6 +140,9 @@ h2{
     .phone{
         padding-left: 0!important;
     }
+    .d-flex .before-after img{
+        max-width: 7rem!important;
+    }
 }
 
 @media all and (max-width:400px){
@@ -163,7 +166,7 @@ h2{
     .before-after{
         max-width: 90%!important;
         & .img{
-            max-width: 9rem!important;
+            max-width: 8rem!important;
         }
     }
     .row{
