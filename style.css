@@ -154,7 +154,7 @@ h2 {
   }
 
   .navbar-toggler {
-    padding: 0.2rem;
+    padding: 0rem !important;
   }
 
   .container .carousel,
