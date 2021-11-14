@@ -1,12 +1,37 @@
 @charset "UTF-8";
-@keyframes animate-title {
+@-webkit-keyframes animate-title {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+@keyframes animate-title {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -18,18 +43,36 @@
     opacity: 1;
   }
 }
-@keyframes scrolling {
+
+@-webkit-keyframes scrolling {
   0% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     /* position initiale à droite */
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     /* position finale à gauche */
   }
 }
+
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
+}
+
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   width: 100%;
   max-width: 100%;
@@ -48,10 +91,13 @@ html {
 .navbar {
   z-index: 5;
 }
+
 .navbar .navbar-toggler {
-  box-shadow: 0 0 0 0 !important;
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
   outline: 0 !important;
 }
+
 .navbar .navbar-toggler span:hover {
   background-color: #f76300 !important;
   color: #fff !important;
@@ -63,22 +109,26 @@ h2 {
 }
 
 .text {
-  animation: animate-title 1700ms ease;
+  -webkit-animation: animate-title 1700ms ease;
+          animation: animate-title 1700ms ease;
   max-width: 17rem;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
 }
 
 .new {
-  animation: appear 3000ms ease-out;
+  -webkit-animation: appear 3000ms ease-out;
+          animation: appear 3000ms ease-out;
 }
 
 .old {
-  animation: appear 3000ms ease-out;
+  -webkit-animation: appear 3000ms ease-out;
+          animation: appear 3000ms ease-out;
 }
 
 .barrow {
-  animation: run 6000ms infinite;
+  -webkit-animation: run 6000ms infinite;
+          animation: run 6000ms infinite;
 }
 
 .scrolling_menu {
@@ -89,18 +139,23 @@ h2 {
   font-size: 1.3rem;
   background-color: #fff !important;
   color: #f76300 !important;
-  box-shadow: 0 0.15em 0.3em #000, inset 0 0 0.3em 0.1em #fff;
+  -webkit-box-shadow: 0 .15em .3em  #000,inset 0 0 0.3em .1em #fff;
+          box-shadow: 0 .15em .3em  #000,inset 0 0 0.3em .1em #fff;
 }
+
 .scrolling_menu > :first-child {
   display: inline-block;
   padding-right: 2em;
   padding-left: 100%;
   white-space: nowrap;
-  animation: scrolling 45s infinite linear;
+  -webkit-animation: scrolling 45s infinite linear;
+          animation: scrolling 45s infinite linear;
 }
+
 .scrolling_menu .scrolling_title {
   font-weight: 700;
 }
+
 .scrolling_menu .bullets {
   padding-left: 7px;
   padding-right: 7px;
@@ -118,6 +173,7 @@ h2 {
   font-size: 0.8rem !important;
   line-height: 1.15;
 }
+
 .footer a:hover {
   color: #fff !important;
   font-weight: 700;
@@ -139,65 +195,88 @@ h2 {
   .navbar h1 a {
     padding-left: 0 !important;
   }
-
   .navbar svg {
     display: none;
   }
-
   .phone {
     padding-left: 0 !important;
   }
-
   .d-flex .before-after img {
     max-width: 7rem !important;
   }
 }
+
 @media all and (max-width: 400px) {
   .navbar h1 a {
     font-size: 0.8rem !important;
   }
-
   .navbar-toggler {
     padding: 0rem !important;
   }
-
   .container .carousel,
-.contaner .carousel-second {
+  .contaner .carousel-second {
     padding-left: 0rem !important;
   }
 }
+
 @media all and (max-width: 480px) {
   .carousel,
-.carousel-second {
+  .carousel-second {
     padding-left: 1rem !important;
   }
-
   .before-after {
     max-width: 90% !important;
   }
   .before-after .img {
     max-width: 8rem !important;
   }
-
   .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
 }
+
 @media all and (max-width: 500px) {
   h1 a {
     font-size: 1rem !important;
   }
-
   .footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
 @media all and (max-width: 600px) {
   main img {
     max-width: 17rem;
   }
-
+  @-webkit-keyframes run {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 70%;
+    }
+    90% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    95% {
+      margin-left: 0px;
+    }
+    96% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    97% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
   @keyframes run {
     0% {
       margin-left: 0;
@@ -206,13 +285,15 @@ h2 {
       margin-left: 70%;
     }
     90% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     95% {
       margin-left: 0px;
     }
     96% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     97% {
       margin-left: 0;
@@ -222,23 +303,46 @@ h2 {
     }
   }
 }
+
 @media all and (min-width: 600px) {
   .text {
     max-width: 35rem;
   }
-
   .run {
     max-width: 32rem;
   }
-
-  .container .carousel, .container .carousel-second {
+  .container .carousel,
+  .container .carousel-second {
     padding-left: 0rem !important;
   }
-
   .roof {
     max-width: 18rem !important;
   }
-
+  @-webkit-keyframes run {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 80%;
+    }
+    90% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    95% {
+      margin-left: 0px;
+    }
+    96% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    97% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
   @keyframes run {
     0% {
       margin-left: 0;
@@ -247,13 +351,15 @@ h2 {
       margin-left: 80%;
     }
     90% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     95% {
       margin-left: 0px;
     }
     96% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     97% {
       margin-left: 0;
@@ -263,26 +369,54 @@ h2 {
     }
   }
 }
+
 @media all and (min-width: 750px) {
   .container .carousel,
-.container .carousel-second {
+  .container .carousel-second {
     padding-left: 4.5rem !important;
   }
 }
+
 @media all and (min-width: 970px) {
   .container .carousel,
-.container .carousel-second {
+  .container .carousel-second {
     padding-left: 10.5rem !important;
   }
-
   .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .services .toiture {
     padding-top: 6rem;
   }
-
+  @-webkit-keyframes run {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 87%;
+    }
+    90% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    95% {
+      margin-left: 0px;
+    }
+    96% {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+    }
+    97% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
   @keyframes run {
     0% {
       margin-left: 0;
@@ -291,13 +425,15 @@ h2 {
       margin-left: 87%;
     }
     90% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     95% {
       margin-left: 0px;
     }
     96% {
-      transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
     }
     97% {
       margin-left: 0;
@@ -307,28 +443,36 @@ h2 {
     }
   }
 }
+
 @media all and (max-width: 992px) {
   .navbar .nav-link {
     padding-left: 0.5rem;
   }
 }
+
 @media all and (max-width: 1150px) {
   .arrow-right {
     display: none;
   }
 }
+
 @media all and (min-width: 1150px) {
   .arrow-down {
     display: none;
   }
-
   .index-photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
-  section img, section .photos {
+  section img,
+  section .photos {
     max-width: 20rem;
     margin: 0 !important;
   }
@@ -339,23 +483,21 @@ h2 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-
   .container .carousel,
-.container .carousel-second {
+  .container .carousel-second {
     width: 20rem;
     max-width: 20rem;
     padding: 0 !important;
   }
-
   .slick-next, .slick-arrow {
     display: none;
   }
 }
+
 @media all and (min-width: 1350px) {
   .index-photos {
     max-width: 1350px;
     margin: auto;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
