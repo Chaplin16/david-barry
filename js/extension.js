@@ -34,4 +34,36 @@ const extension = [
         alt:"david barry maconnerie charpente maison aigues mortes",
         photo:"images/slick-images/david-barry-maconnerie-charpente.jpg"
     },
+    {
+        id: 7,
+        alt:"david barry maconnerie mur fini maison aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-creation-etage.jpg"
+    },
+        {
+        id: 8,
+        alt:"david barry maconnerie mur toit tuiles aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-tuiles-toit.jpg"
+    },
+    {
+        id: 9,
+        alt:"david barry maconnerie mur creation plancher aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-metrage-mise-a-niveau.jpg"
+    },
+    {
+        id: 10,
+        alt:"david barry maconnerie mur plancher aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-plancher-maison.jpg"
+    },
+    {
+        id: 11,
+        alt:"david barry maconnerie mur enduit facade aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-facade-exterieure.jpg"
+    },
+    {
+        id: 12,
+        alt:"david barry maconnerie mur facade enduit lisse aigues mortes",
+        photo:"images/slick-images/david-barry-maconnerie-finition-facade.jpeg"
+    }
+
+
 ]
