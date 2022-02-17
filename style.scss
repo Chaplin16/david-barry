@@ -30,13 +30,20 @@ $color--main: #f76300;
 
 .bg--color{
     background-color: $color--main;
+    opacity: 0.9;
 }
 
 .text--color{
     color: $color--main;
 }
+
+.bg--img{
+    background-image: url(images/david-barry-mur-creation.png);
+}
+
 .navbar {
     z-index: 5;
+    opacity: 0.9;
     .navbar-toggler{
         box-shadow: 0 0 0 0 !important;
         outline:0!important;
@@ -45,6 +52,16 @@ $color--main: #f76300;
             color: #fff!important;
             border-color: #000!important;
         }
+    }
+    & a:hover{
+        color: #fff!important;
+    }
+    .nav-link:hover,
+    .home{
+        background-color: #fff;
+        border-radius: 10px;
+        color: $color--main!important;
+        border: 2px solid #fff;
     }
 }
 
@@ -57,7 +74,7 @@ h2{
     animation: animate-title 1700ms ease;
     max-width: 17rem;
     font-size:1.8rem;
-    
+    box-shadow: 3px 3px 5px rgb(39, 38, 38);
     letter-spacing: 0.2rem;;
 }
 
@@ -109,6 +126,7 @@ h2{
 .footer{
     font-size: 0.8rem!important;
     line-height: 1.15;
+    opacity: 0.9;
     & a:hover{
         color: #fff!important;
         font-weight: 700;
@@ -197,9 +215,15 @@ h2{
         97% {margin-left:0}
         100% {margin-left:0}
     }
+    .bio{
+        padding: 1rem 2rem;
+    }
 }
 
 @media all and (min-width:600px){
+    .bio{
+        padding: 3rem;
+    }
     .text{
         max-width: 35rem;
     }
@@ -234,6 +258,9 @@ h2{
 }
 
 @media all and (min-width: 970px){
+    .bio{
+        padding: 3rem 4rem;
+    }
     .container .carousel,
     .container .carousel-second{
         padding-left: 10.5rem!important;
@@ -241,8 +268,9 @@ h2{
     .services{
         display: flex;
         justify-content: space-around;
+        align-items: baseline;
         & .toiture{
-            padding-top: 6rem;
+            padding-top: 3rem;
         }
     }
     @keyframes run{
