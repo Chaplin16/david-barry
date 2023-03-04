@@ -2,7 +2,7 @@ function carousel(selector, data) {
     let element = document.querySelector(selector);
     data.forEach(function(d) {
         element.innerHTML += 
-        `<div class="card-img "><img src="${d.photo}" alt="${d.alt}" class=""></div>`;
+        `<div class="card-img"><img src="${d.photo}" alt="${d.alt}" class=""></div>`;
     });
     $(element).slick({
         centerMode: true,
@@ -54,4 +54,5 @@ function carousel(selector, data) {
   }
   
   carousel(".carousel", extension);
-  carousel(".carousel-second", realisation)
+  carousel(".carousel-second", realisation);
+  carousel(".carousel-third", creation);
