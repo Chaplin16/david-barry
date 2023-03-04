@@ -47,7 +47,7 @@ html {
 }
 
 .bg--img {
-  background-image: url(images/david-barry-mur-creation.png);
+  background-image: url("images/macon-aigues-mortes-david-barry-mur-creation.png");
 }
 
 .navbar {
@@ -180,13 +180,15 @@ h2 {
   }
 
   .container .carousel,
-.contaner .carousel-second {
+.contaner .carousel-second,
+.carousel-third {
     padding-left: 0rem !important;
   }
 }
 @media all and (max-width: 480px) {
   .carousel,
-.carousel-second {
+.carousel-second,
+.carousel-third {
     padding-left: 1rem !important;
   }
 
@@ -256,7 +258,7 @@ h2 {
     max-width: 32rem;
   }
 
-  .container .carousel, .container .carousel-second {
+  .container .carousel, .container .carousel-second, .container .carousel-third {
     padding-left: 0rem !important;
   }
 
@@ -290,7 +292,8 @@ h2 {
 }
 @media all and (min-width: 750px) {
   .container .carousel,
-.container .carousel-second {
+.container .carousel-second,
+.carousel-third {
     padding-left: 4.5rem !important;
   }
 }
@@ -300,7 +303,8 @@ h2 {
   }
 
   .container .carousel,
-.container .carousel-second {
+.container .carousel-second,
+.carousel-third {
     padding-left: 10.5rem !important;
   }
 
@@ -371,7 +375,8 @@ h2 {
   }
 
   .container .carousel,
-.container .carousel-second {
+.container .carousel-second,
+.carousel-third {
     width: 20rem;
     max-width: 20rem;
     padding: 0 !important;
