@@ -76,6 +76,7 @@ html {
 
 h2 {
   padding-top: 4.5rem !important;
+  font-family: 'Cinzel Decorative', display;
 }
 
 .text {
@@ -84,14 +85,17 @@ h2 {
   font-size: 1.8rem;
   box-shadow: 3px 3px 5px #272626;
   letter-spacing: 0.2rem;
+  font-family: 'Amaranth', sans-serif;
 }
 
 .new {
   animation: appear 3000ms ease-out;
+  font-family: 'Cinzel Decorative', display;
 }
 
 .old {
   animation: appear 3000ms ease-out;
+  font-family: 'Cinzel Decorative', display;
 }
 
 .barrow {
@@ -117,6 +121,7 @@ h2 {
 }
 .scrolling_menu .scrolling_title {
   font-weight: 700;
+font-family: 'Playfair Display', serif;
 }
 .scrolling_menu .bullets {
   padding-left: 7px;

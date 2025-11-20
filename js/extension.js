@@ -32,7 +32,7 @@ const extension = [
     {
         id: 6,
         alt:"maçon aigues mortes david barry charpente maison aigues mortes",
-        photo:"images/slick-images/artisan-macon-aigues-mortes-david-barry-maconnerie-charpente.jpg"
+        photo:"images/slick-images/artisan-macon-aigues-mortes-david-barry-maconnerie-charpente.png"
     },
     {
         id: 7,
@@ -62,7 +62,7 @@ const extension = [
     {
         id: 12,
         alt:"maçon aigues mortes david barry mur facade enduit lisse aigues mortes",
-        photo:"images/slick-images/artisan-macon-aigues-mortes-david-barry-maconnerie-finition-facade.jpeg"
+        photo:"images/slick-images/artisan-macon-aigues-mortes-david-barry-maconnerie-finition-facade.png"
     }
 
 
